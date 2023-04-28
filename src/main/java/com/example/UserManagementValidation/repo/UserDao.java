@@ -2,8 +2,6 @@ package com.example.UserManagementValidation.repo;
 
 import com.example.UserManagementValidation.model.User;
 import org.springframework.stereotype.Repository;
-
-import java.nio.file.attribute.UserPrincipalNotFoundException;
 import java.util.ArrayList;
 import java.util.List;
 @Repository

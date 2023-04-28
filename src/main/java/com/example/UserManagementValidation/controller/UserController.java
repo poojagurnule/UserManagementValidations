@@ -17,7 +17,7 @@ public class UserController {
     UserService userService;
 
        @PostMapping("/addUser")
-        public ResponseEntity<String> addUser( @RequestBody User user) {
+        public ResponseEntity<String> addUser(@Valid @RequestBody User user) {
         if (user.getDateOfBirth() == null || user.getDateOfBirth().isEmpty()) {
             return ResponseEntity.badRequest().body("Date of birth is required");
         }
@@ -51,9 +51,7 @@ public class UserController {
     public List<User> getAllUser(){
         return userService.getUserAtService();
     }
-
-
-        @DeleteMapping("/deleteUser")
+    @DeleteMapping("/deleteUser")
        public  String deleteUser(@RequestParam int id){
         User user =userService.deleteUser(id);
         return "user deleted with Id "+ id +"with data"+ user.toString();
