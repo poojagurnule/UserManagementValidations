@@ -83,9 +83,9 @@ This endpoint makes a call to method in UserService class which is connected to 
 ```
 We have used ArrayList data structure for GetMapping to return list of all the User to the client .
 ```
-### OutPut :
-![UserManagementValidations](https://user-images.githubusercontent.com/102051371/235116956-556ed176-6069-4a08-bd8b-8f82efb35491.png)
 
+## OutPut :
+#![UserManagementValidations](https://user-images.githubusercontent.com/102051371/235164563-b63e0ea0-4ee6-46d8-a72a-822e202c8e6b.png)
 ---
 ## Project Summary
 
